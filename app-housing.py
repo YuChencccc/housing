@@ -22,7 +22,7 @@ if income_level == 'Low':
 if income_level == 'High':
     df = df[df.median_income > 4.5]
 if income_level == 'Medium':
-    df = df[(df.median_income > 2.5)&(df.median_income <= 4.5)]
+    df = df[(df.median_income > 2.5)&(df.median_income < 4.5)]
 
 st.map(df)
 
